@@ -7,9 +7,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 @Entity
 @Table(name = "yemekler")
 public class Yemek {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private Long id;
 
     private String tarih;
